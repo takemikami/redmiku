@@ -1,28 +1,64 @@
 <goml>
 	<head>
-		<geo id="geo0" type="Cube" param="3 3 3" />
-		<geo id="geo1" type="Icosahedron" param="2.5" />
-		<mtl id="mtl1" type="MeshLambert" param="color: #00f;" />
+<geo id="geo0" type="Plane" param="12 4" />
+<mtl id="mtlZ" type="MeshPhong" param="color: #0f0; specular: #fff; ambient: #300;" />
+
+<mtl id="mtl0" type="MeshPhong" param="map: #txr0;" /><txr id="txr0" html="#task0" animation="false" param="" />
+<mtl id="mtl1" type="MeshPhong" param="map: #txr1;" /><txr id="txr1" html="#task1" animation="false" param="" />
+<mtl id="mtl2" type="MeshPhong" param="map: #txr2;" /><txr id="txr2" html="#task2" animation="false" param="" />
+<mtl id="mtl3" type="MeshPhong" param="map: #txr3;" /><txr id="txr3" html="#task3" animation="false" param="" />
+<mtl id="mtl4" type="MeshPhong" param="map: #txr4;" /><txr id="txr4" html="#task4" animation="false" param="" />
+<mtl id="mtl5" type="MeshPhong" param="map: #txr5;" /><txr id="txr5" html="#task5" animation="false" param="" />
+<mtl id="mtl6" type="MeshPhong" param="map: #txr6;" /><txr id="txr6" html="#task6" animation="false" param="" />
+<mtl id="mtl7" type="MeshPhong" param="map: #txr7;" /><txr id="txr7" html="#task7" animation="false" param="" />
+<mtl id="mtl8" type="MeshPhong" param="map: #txr8;" /><txr id="txr8" html="#task8" animation="false" param="" />
+<mtl id="mtl9" type="MeshPhong" param="map: #txr9;" /><txr id="txr9" html="#task9" animation="false" param="" />
+
+<import>
+    <style>div {color: #f00; height: 50px; position: absolute; top: 0; background-color:yellow;}</style>
+    <div id="task0">#1: ○○の不具合対処</div>
+    <div id="task1">#2: ××からの問い合わせ回答</div>
+    <div id="task2">#3: △△追加機能設計</div>
+    <div id="task3">#4: ○○の不具合対処</div>
+    <div id="task4">#5: ××からの問い合わせ回答</div>
+    <div id="task5">#6: △△追加機能設計</div>
+    <div id="task6">#7: ○○の不具合対処</div>
+    <div id="task7">#8: ××からの問い合わせ回答</div>
+    <div id="task8">#9: △△追加機能設計</div>
+    <div id="task9">#10: ○○の不具合対処</div>
+</import>
 
 		<rdr frame="body" camera="camera:first" param="antialias: true; clearColor: #fff;"/>
 	</head>
 	<body>
-		<scene>
-			<mesh geo="#geo0" mtl="#mtl1" />
-			<mesh geo="#geo0" mtl="#mtl1" style="positionX: 7;" />
-			<mesh geo="#geo0" mtl="#mtl1" style="positionX: -7;" />
+		<scene style="axis:20;">
 
-			<mesh geo="#geo0" mtl="#mtl1" style="positionY: 7;" />
-			<mesh geo="#geo0" mtl="#mtl1" style="position: 7 7 0;" />
-			<mesh geo="#geo0" mtl="#mtl1" style="position: -7 7 0;" />
+<mesh id="mesh9" geo="#geo0" mtl="#mtl9" style="position: 9 9 -9;"></mesh>
+<mesh id="mesh8" geo="#geo0" mtl="#mtl8" style="position: 8 8 -8;"></mesh>
+<mesh id="mesh7" geo="#geo0" mtl="#mtl7" style="position: 7 7 -7;"></mesh>
+<mesh id="mesh6" geo="#geo0" mtl="#mtl6" style="position: 6 6 -6;"></mesh>
+<mesh id="mesh5" geo="#geo0" mtl="#mtl5" style="position: 5 5 -5;"></mesh>
+<mesh id="mesh4" geo="#geo0" mtl="#mtl4" style="position: 4 4 -4;"></mesh>
+<mesh id="mesh3" geo="#geo0" mtl="#mtl3" style="position: 3 3 -3;"></mesh>
+<mesh id="mesh2" geo="#geo0" mtl="#mtl2" style="position: 2 2 -2;"></mesh>
+<mesh id="mesh1" geo="#geo0" mtl="#mtl1" style="position: 1 1 -1;"></mesh>
+<mesh id="mesh0" geo="#geo0" mtl="#mtl0" style=""></mesh>
 
-			<obj style="positionY: 14;">
-				<mesh geo="#geo0" mtl="#mtl1" />
-				<mesh geo="#geo0" mtl="#mtl1" style="positionX: 7;" />
-				<mesh geo="#geo0" mtl="#mtl1" style="positionX: -7;" />
-			</obj>
 
-			<camera style="cameraFar: 100000; position: 6 13 20; lookAtY: 7;" />
+			<mesh id="person0" geo="#geo0" mtl="#mtlZ" style="position:  24  -9 0;"></mesh>
+			<obj id="doll0" style="position:  24  -7 0;"></obj>
+			<mmd id="" model="model/neru/index.pmx" motion="motion/melt.vmd" style="position:  24  -7 0;"></mmd>
+
+			<mesh id="person1" geo="#geo0" mtl="#mtlZ" style="position:  -24  -9 0;"></mesh>
+			<obj id="doll1" style="position: -24  -7 0;"></obj>
+			<mmd id="" model="model/neru/index.pmx" motion="motion/melt.vmd" style="position: -24  -7 0;"></mmd>
+
+			<mesh id="person2" geo="#geo0" mtl="#mtlZ" style="position:  0  -32 0;"></mesh>
+			<obj id="doll2" style="position:   0 -29 0;"></obj>
+			<mmd id="" model="model/miku/index.pmx" motion="motion/melt.vmd" style="position:   0 -29 0;"></mmd>
+
+
+			<camera style="cameraFar: 100000; position: 6 8 70; lookAtY: 0;" />
 			<light type="Amb" style="lightColor: #222;" />
 			<light type="Dir" style="position: 1 3 5;" />
 		</scene>
