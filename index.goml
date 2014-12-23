@@ -3,14 +3,14 @@
 <geo id="geo0" type="Plane" param="12 4" />
 <mtl id="mtlZ" type="MeshPhong" param="color: #0f0; specular: #fff; ambient: #300;" />
 
-<mtl id="mtl0" type="MeshPhong" param="map: #txr0;" /><txr id="txr0" html="#task0" animation="false" param="" />
-<mtl id="mtl1" type="MeshPhong" param="map: #txr1;" /><txr id="txr1" html="#task1" animation="false" param="" />
-<mtl id="mtl2" type="MeshPhong" param="map: #txr2;" /><txr id="txr2" html="#task2" animation="false" param="" />
-<mtl id="mtl3" type="MeshPhong" param="map: #txr3;" /><txr id="txr3" html="#task3" animation="false" param="" />
-<mtl id="mtl4" type="MeshPhong" param="map: #txr4;" /><txr id="txr4" html="#task4" animation="false" param="" />
-<mtl id="mtl5" type="MeshPhong" param="map: #txr5;" /><txr id="txr5" html="#task5" animation="false" param="" />
-<mtl id="mtl6" type="MeshPhong" param="map: #txr6;" /><txr id="txr6" html="#task6" animation="false" param="" />
-<mtl id="mtl7" type="MeshPhong" param="map: #txr7;" /><txr id="txr7" html="#task7" animation="false" param="" />
+<mtl id="mtl0" type="MeshPhong" param="map: #txr0;side: 2;" /><txr id="txr0" html="#task0" animation="false" param="" />
+<mtl id="mtl1" type="MeshPhong" param="map: #txr1;side: 2;" /><txr id="txr1" html="#task1" animation="false" param="" />
+<mtl id="mtl2" type="MeshPhong" param="map: #txr2;side: 2;" /><txr id="txr2" html="#task2" animation="false" param="" />
+<mtl id="mtl3" type="MeshPhong" param="map: #txr3;side: 2;" /><txr id="txr3" html="#task3" animation="false" param="" />
+<mtl id="mtl4" type="MeshPhong" param="map: #txr4;side: 2;" /><txr id="txr4" html="#task4" animation="false" param="" />
+<mtl id="mtl5" type="MeshPhong" param="map: #txr5;side: 2;" /><txr id="txr5" html="#task5" animation="false" param="" />
+<mtl id="mtl6" type="MeshPhong" param="map: #txr6;side: 2;" /><txr id="txr6" html="#task6" animation="false" param="" />
+<mtl id="mtl7" type="MeshPhong" param="map: #txr7;side: 2;" /><txr id="txr7" html="#task7" animation="false" param="" />
 <mtl id="mtl8" type="MeshPhong" param="map: #txr8;" /><txr id="txr8" html="#task8" animation="false" param="" />
 <mtl id="mtl9" type="MeshPhong" param="map: #txr9;" /><txr id="txr9" html="#task9" animation="false" param="" />
 

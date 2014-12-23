@@ -25,7 +25,8 @@ jThree( function( j3 ) {
 				var thismesh = j3("#mesh" + crr_id);
 				var postPerson0 = function() {
 					j3("#doll0").append(thismesh);
-					thismesh.css('position', Math.random()*20 + ' 0 0');
+					thismesh.css('position', Math.random()*20 + ' ' + Math.random()*20 + ' ' + Math.random()*20);
+//    j3("#doll0").animate({'rotateY': '6.28'}, 6000);
 				};
 				thismesh.animate({'position': '24  -9 0'}, 1000, postPerson0);
 				break;
@@ -33,7 +34,7 @@ jThree( function( j3 ) {
 				var thismesh = j3("#mesh" + crr_id);
 				var postPerson1 = function() {
 					j3("#doll1").append(thismesh);
-					thismesh.css('position', Math.random()*20 + ' 0 0');
+					thismesh.css('position', Math.random()*20 + ' ' + Math.random()*20 + ' ' + Math.random()*20);
 				};
 				thismesh.animate({'position': '-24  -9 0'}, 1000, postPerson1);
 				break;
@@ -41,7 +42,7 @@ jThree( function( j3 ) {
 				var thismesh = j3("#mesh" + crr_id);
 				var postPerson2 = function() {
 					j3("#doll2").append(thismesh);
-					thismesh.css('position', Math.random()*20 + ' 0 0');
+					thismesh.css('position', Math.random()*20 + ' ' + Math.random()*20 + ' ' + Math.random()*20);
 				};
 				thismesh.animate({'position': '-0 -29 0'}, 1000, postPerson2);
 				break;
