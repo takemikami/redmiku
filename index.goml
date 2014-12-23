@@ -31,7 +31,7 @@
 		<rdr frame="body" camera="camera:first" param="antialias: true; clearColor: #fff;"/>
 	</head>
 	<body>
-		<scene style="axis:20;">
+		<scene>
 
 <mesh id="mesh9" geo="#geo0" mtl="#mtl9" style="position: 9 9 -9;"></mesh>
 <mesh id="mesh8" geo="#geo0" mtl="#mtl8" style="position: 8 8 -8;"></mesh>
@@ -45,17 +45,19 @@
 <mesh id="mesh0" geo="#geo0" mtl="#mtl0" style=""></mesh>
 
 
+
 			<mesh id="person0" geo="#geo0" mtl="#mtlZ" style="position:  24  -9 0;"></mesh>
 			<obj id="doll0" style="position:  24  -7 0;"></obj>
 			<mmd id="" model="model/neru/index.pmx" motion="motion/melt.vmd" style="position:  24  -7 0;"></mmd>
 
 			<mesh id="person1" geo="#geo0" mtl="#mtlZ" style="position:  -24  -9 0;"></mesh>
 			<obj id="doll1" style="position: -24  -7 0;"></obj>
-			<mmd id="" model="model/neru/index.pmx" motion="motion/melt.vmd" style="position: -24  -7 0;"></mmd>
+			<mmd id="" model="model/miku/index.pmx" motion="motion/melt.vmd" style="position: -24  -7 0;"></mmd>
 
 			<mesh id="person2" geo="#geo0" mtl="#mtlZ" style="position:  0  -32 0;"></mesh>
 			<obj id="doll2" style="position:   0 -29 0;"></obj>
-			<mmd id="" model="model/miku/index.pmx" motion="motion/melt.vmd" style="position:   0 -29 0;"></mmd>
+			<obj style="scale: 70;position: 0 -23 0;" model="model/negimiku/negimiku.dae"></obj>
+			<!-- mmd id="" model="model/miku/index.pmx" motion="motion/melt.vmd" style="position:   0 -29 0;"></mmd -->
 
 
 			<camera style="cameraFar: 100000; position: 6 8 70; lookAtY: 0;" />

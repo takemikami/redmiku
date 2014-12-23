@@ -1,3 +1,10 @@
+	function updateWatch() {
+		sec = (new Date()) - start;
+	 	$("#stopwatch").html(Math.round(sec/1000));
+//	 	$("#stopwatch").html(Math.round(sec/1000);
+	 	setTimeout('updateWatch()', 1000);
+	};
+
 jThree( function( j3 ) {
 
 	$( "#loading" ).remove();
@@ -5,6 +12,12 @@ jThree( function( j3 ) {
 	j3.Trackball();
 	j3.Stats();
 	jThree.MMD.play();
+
+	start = new Date();
+
+	setTimeout('updateWatch()', 1000);
+//	$("#stopwatch").html(((new Date()) - start)/1000);
+//	setTimeout('$("#stopwatch").html(((new Date()) - start)/1000)', 1000);
 
 	j3("#person0").click(function() { pop("#person0"); } )
 	j3("#person1").click(function() { pop("#person1"); } )
